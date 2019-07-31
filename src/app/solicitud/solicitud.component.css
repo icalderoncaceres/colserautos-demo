@@ -1,0 +1,20 @@
+div.row {
+    border: rgb(73, 50, 50) 1px solid;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+
+div.row>.control {
+    width: 30%;
+    margin-right: 2%;    
+}
+div.row>.control>input {
+    margin-left: 3px;
+}
+
+div.button {
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+}

@@ -1,0 +1,63 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class='row'>
+      <div class='control'>
+        <label for="Credencial">Credencial</label>
+        <input name="Credencial" ngModel required #first="ngModel" placeholder="Credencial">
+      </div>
+      <div class='control'>
+        <label for="NoSolicitud">NoSolicitud</label>
+        <input name="NoSolicitud" ngModel placeholder="NoSolicitud">
+      </div>
+      <div class='control'>
+        <label for="CodigoCentroServicio">CodigoCentroServicio</label>
+        <input name="CodigoCentroServicio" ngModel placeholder="CodigoCentroServicio">
+      </div>
+    </div>
+    <div class='row'>
+      <div class='control'>
+        <label for="Cliente_Nombres">Cliente_Nombres</label>    
+        <input name="Cliente_Nombres" ngModel placeholder="Cliente_Nombres">
+      </div>
+      <div class='control'>
+        <label for="Cliente_Apellidos">Cliente_Apellidos</label>      
+        <input name="Cliente_Apellidos" ngModel placeholder="Cliente_Apellidos">
+      </div>
+      <div class='control'>
+        <label for="NoIdentificacion">NoIdentificacion</label>      
+        <input name="NoIdentificacion" ngModel placeholder="NoIdentificacion">
+      </div>
+    </div>
+    <div class='row'>
+      <div class='control'>
+        <label for="TipoIdentificación">TipoIdentificación</label>        
+        <input name="TipoIdentificación" ngModel placeholder="TipoIdentificación">
+      </div>
+      <div class='control'>
+        <label for="Servicio">Servicio</label>      
+        <input name="Servicio" ngModel placeholder="Servicio">
+      </div>
+      <div class='control'>
+        <label for="CodigoSucursal">CodigoSucursal</label>      
+        <input name="CodigoSucursal" ngModel placeholder="CodigoSucursal">
+      </div>
+    </div>
+    <div class='row'>
+      <div class='control'>
+        <label for="NoIdentificacionAsesor">NoIdentificacionAsesor</label>        
+        <input name="NoIdentificacionAsesor" ngModel placeholder="NoIdentificacionAsesor">
+      </div>
+      <div class='control'>
+        <label for="TipoVehículo">TipoVehículo</label>      
+        <input name="TipoVehículo" ngModel placeholder="TipoVehículo">
+      </div>
+      <div class='control'>
+        <label for="Placa">Placa</label>      
+        <input name="Placa" ngModel placeholder="Placa">
+      </div>
+    </div>
+    <div class="button">
+      <button>Enviar</button>
+    </div>
+  </form>
+  <hr />
+  <div>{{resultado}}</div>  
